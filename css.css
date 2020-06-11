@@ -28,5 +28,28 @@
 #tableau{
     border: solid;
     border-color: black;
-    border
+    
+}
+
+#container1{
+    
+    cursor: pointer;
+    
+}
+
+#thing{
+    width: 75px;
+    height: 75px;
+    border: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    transform: translate3d(50px,50px,0);
+    transition: transform .3s ease-in;
+}
+#countainer2{
+    cursor: pointer;
+    border: solid;
+    border-color: black;
+    width: 10%;
+    height: 15%;
 }
