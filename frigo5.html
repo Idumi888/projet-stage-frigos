@@ -33,7 +33,7 @@
         </div>
 
 
-        <div class="col s10 center" style="margin-left: 11em;">
+        <div class="col s10 center" style="margin-left: 22em;">
             <table class="center responsive-table">
                 <tr>
                     <td></td>
@@ -242,6 +242,19 @@
         $(document).ready(function() {
             $('.sidenav').sidenav();
         })
+    </script>
+    <script>
+        var thing = document.querySelector("#thing");
+        var container = document.querySelector("#container");
+
+        container.addEventListener("click", getClickPosition, false);
+
+        function getClickPosition(e) {
+            var xposition = e.clientX - (thing.offsetWidth / 2);
+            var yposition = e.clientY - (thing.offsetHeight / 2);
+            var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
+            thing.style.transform = translate3dValue
+        }
     </script>
 </body>
 
