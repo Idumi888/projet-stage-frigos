@@ -135,40 +135,57 @@
 
 
 
-            <ul class="sidenav" id="mobile-links">
-                <li><a href="/index.html">Accueil</a></li>
-                <li><a href="/frigo3.html">Frigo 3</a></li>
-                <li><a href="/frigo4.html">Frigo 4</a></li>
-                <li><a href="/frigo5.html">Frigo 5</a></li>
-                <li><a href="/frigo6.html">Frigo 6</a></li>
-                <li><a href="/frigo7.html">Frigo 7</a></li>
-            </ul>
-
-
-
         </div>
-        <script>
-            var thing = document.querySelector("#thing");
-            var container = document.querySelector("#container1");
+    </div>
+    <div <div class="col s8 ">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Choississez la variété</span>
+                <p></p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+                <a href="#">This is a link</a>
+            </div>
+        </div>
+    </div>
 
 
-            container.addEventListener("click", getClickPosition, false);
 
-            function getClickPosition(e) {
-                var xposition = e.clientX - (thing.offsetWidth / 2);
-                var yposition = e.clientY - (thing.offsetHeight / 2);
-                var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
-                thing.style.transform = translate3dValue
-            }
-        </script>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="/index.html">Accueil</a></li>
+        <li><a href="/frigo3.html">Frigo 3</a></li>
+        <li><a href="/frigo4.html">Frigo 4</a></li>
+        <li><a href="/frigo5.html">Frigo 5</a></li>
+        <li><a href="/frigo6.html">Frigo 6</a></li>
+        <li><a href="/frigo7.html">Frigo 7</a></li>
+    </ul>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('.sidenav').sidenav();
-            })
-        </script>
+
+
+    </div>
+    <script>
+        var thing = document.querySelector("#thing");
+        var container = document.querySelector("#container1");
+
+
+        container.addEventListener("click", getClickPosition, false);
+
+        function getClickPosition(e) {
+            var xposition = e.clientX - (thing.offsetWidth / 2);
+            var yposition = e.clientY - (thing.offsetHeight / 2);
+            var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
+            thing.style.transform = translate3dValue
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        })
+    </script>
 
 </body>
 
