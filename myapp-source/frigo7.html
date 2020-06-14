@@ -177,33 +177,30 @@
                     <td style="border: solid;"></td>
                     <td style="border: solid;"></td>
                     <td style="border: solid;"></td>
->>>>>>> 41776c91e128845fd88634a0c708b8f6cf0006b6
+
                 </tr>
-            
+
             </table>
+            <button class="bouton1">Melody</button>
+            <button class="bouton2">Voyager</button>
+            <button class="bouton3">Manitou</button>
+            <button class="bouton4">Fraceline</button>
         </div>
-
-        </div>
-
-        <ul class=" sidenav " id="mobile-links ">
-            <li><a href="/index.html ">Accueil</a></li>
-            <li><a href="/frigo3.html ">Frigo 3</a></li>
-            <li><a href="/frigo4.html ">Frigo 4</a></li>
-            <li><a href="/frigo5.html ">Frigo 5</a></li>
-            <li><a href="/frigo6.html ">Frigo 6</a></li>
-            <li><a href="/frigo7.html ">Frigo 7</a></li>
-        </ul>
 
     </div>
 
-    <ul class="sidenav" id="mobile-links">
-        <li><a href="/index.html">Accueil</a></li>
-        <li><a href="/frigo3.html">Frigo 3</a></li>
-        <li><a href="/frigo4.html">Frigo 4</a></li>
-        <li><a href="/frigo5.html">Frigo 5</a></li>
-        <li><a href="/frigo6.html">Frigo 6</a></li>
-        <li><a href="/frigo7.html">Frigo 7</a></li>
+    <ul class=" sidenav " id="mobile-links ">
+        <li><a href="/index.html ">Accueil</a></li>
+        <li><a href="/frigo3.html ">Frigo 3</a></li>
+        <li><a href="/frigo4.html ">Frigo 4</a></li>
+        <li><a href="/frigo5.html ">Frigo 5</a></li>
+        <li><a href="/frigo6.html ">Frigo 6</a></li>
+        <li><a href="/frigo7.html ">Frigo 7</a></li>
     </ul>
+
+    </div>
+
+
 
 
 
@@ -229,6 +226,28 @@
             var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
 
             thing.style.transform = translate3dValue
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++)
+                tds[i].onclick = toggleHighlight;
+
+
+        }
+
+        function toggleHighlight() {
+            var td = this;
+            td.style.backgroundColor = prompt("choisis une couleur en anglais");
+
+
+            if (td.className == 'highlight')
+                td.className = '';
+
+            else
+                td.className = 'highlight';
+
         }
     </script>
 </body>

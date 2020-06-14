@@ -131,9 +131,12 @@
                     <td style="border: solid;"></td>
                     <td style="border: solid;"></td>
                     <td style="border: solid;"></td>
->>>>>>> 41776c91e128845fd88634a0c708b8f6cf0006b6
                 </tr>
             </table>
+            <button class="bouton1">Melody</button>
+            <button class="bouton2">Voyager</button>
+            <button class="bouton3">Manitou</button>
+            <button class="bouton4">Fraceline</button>
 
         </div>
 
@@ -170,6 +173,28 @@
             var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
 
             thing.style.transform = translate3dValue
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++)
+                tds[i].onclick = toggleHighlight;
+
+
+        }
+
+        function toggleHighlight() {
+            var td = this;
+            td.style.backgroundColor = prompt("choisis une couleur en anglais");
+
+
+            if (td.className == 'highlight')
+                td.className = '';
+
+            else
+                td.className = 'highlight';
+
         }
     </script>
 </body>

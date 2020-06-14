@@ -34,7 +34,7 @@
 
 
 
-     
+
 
         <div class="col s10 center" style="margin-left: 22em;">
             <table id="tableau" class="center responsive-table">
@@ -220,6 +220,10 @@
                     <td style="border: solid;"></td>
                 </tr>
             </table>
+            <button class="bouton1">Melody</button>
+            <button class="bouton2">Voyager</button>
+            <button class="bouton3">Manitou</button>
+            <button class="bouton4">Fraceline</button>
         </div>
 
         <ul class="sidenav" id="mobile-links">
@@ -255,6 +259,28 @@
             var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
 
             thing.style.transform = translate3dValue
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++)
+                tds[i].onclick = toggleHighlight;
+
+
+        }
+
+        function toggleHighlight() {
+            var td = this;
+            td.style.backgroundColor = prompt("choisis une couleur en anglais");
+
+
+            if (td.className == 'highlight')
+                td.className = '';
+
+            else
+                td.className = 'highlight';
+
         }
     </script>
 </body>
