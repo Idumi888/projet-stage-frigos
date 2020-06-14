@@ -1,0 +1,19 @@
+{
+    "name": "frigos_a_patates",
+    "version": "1.0.0",
+    "description": "Gestionnaire de frigos a patates.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "VincentDievart_TimmermanMehdi",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^8.3.1",
+        "electron-winstaller": "^4.0.0"
+    },
+    "dependencies": {
+        "electron-squirrel-startup": "^1.0.0"
+
+    }
+}
