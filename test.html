@@ -32,6 +32,33 @@
 
         </div>
         <div class="col ">
+            <table id="GFG_DOWN" class="center responsive-table">
+                <tr style="border: solid;">
+                    <td id="color1" style="border: solid;"></td>
+                    <td style="border: solid;"></td>
+                </tr>
+                <tr style="border: solid;">
+                    <td style="border: solid;"></td>
+                    <td style="border: solid;"></td>
+
+                </tr>
+                <tr style="border: solid;">
+                    <td style="border: solid;"></td>
+                    <td style="border: solid;"></td>
+                </tr>
+            </table>
+
+            <a id="color1" class="waves-effect waves-light btn">button</a>
+            <a id="color2" class="waves-effect waves-light btn">button</a>
+            <a id="color3" class="waves-effect waves-light btn">button</a>
+            <a id="color4" class="waves-effect waves-light btn">button</a>
+            <a id="color5" class="waves-effect waves-light btn">button</a>
+            <a id="color6" class="waves-effect waves-light btn">button</a>
+
+
+
+
+
 
         </div>
 
@@ -56,6 +83,47 @@
             $('.sidenav').sidenav();
         })
     </script>
+    <script>
+        $('#GFG_UP').text("Click on button to change the background color");
+        $('button').on('click', function() {
+            $('body').css('background', '#ccc');
+            $('#GFG_DOWN').text("Background Color Changed!");
+        });
+    </script>
+
+    <script>
+        window.onload = function() {
+            var tds = document.getElementsByTagName("td");
+            for (var i = 0; i < tds.length; i++)
+                tds[i].onclick = toggleHighlight;
+
+        }
+
+        function toggleHighlight() {
+            var td = this;
+            if (td.className == 'highlight')
+                td.className = '';
+            else
+                td.className = 'highlight';
+        }
+    </script>
+
+    <script>
+        var thing = document.querySelector(".highlight");
+
+
+
+        container.addEventListener("click", getClickPosition, false);
+
+        function getClickPosition(e) {
+            var xposition = e.clientX - (thing.offsetWidth / 2);
+            var yposition = e.clientY - (thing.offsetHeight / 2);
+            var translate3dValue = "translate3d(" + xposition + "px," + yposition + "px,0)";
+            var changecolor = background - color: #a70000;
+            thing.style.transform = translate3dValue
+        }
+    </script>
+
 </body>
 
 </html>

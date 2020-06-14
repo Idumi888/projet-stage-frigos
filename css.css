@@ -1,55 +1,55 @@
-#img1{
+#img1 {
     position: absolute;
     left: 50px;
-    
 }
 
-#img2{
+#img2 {
     position: absolute;
     left: 100px;
-    
 }
-#img3{
+
+#img3 {
     position: absolute;
     left: 150px;
-    
 }
-#img4{
+
+#img4 {
     position: absolute;
     left: 200px;
-    
 }
-#img5{
+
+#img5 {
     position: absolute;
     left: 250px;
-    
 }
 
-#tableau{
+#tableau {
     border: solid;
     border-color: black;
-    
 }
 
-#container1{
-    
+#container1 {
     cursor: pointer;
-    
 }
 
-#thing{
+#thing {
     width: 75px;
     height: 75px;
     border: 15px;
     border-radius: 50%;
     background-color: yellow;
-    transform: translate3d(50px,50px,0);
+    transform: translate3d(50px, 50px, 0);
     transition: transform .3s ease-in;
 }
-#countainer2{
+
+#countainer2 {
     cursor: pointer;
     border: solid;
     border-color: black;
     width: 10%;
     height: 15%;
+}
+
+.highlight {
+    background-color: #a70000;
 }
